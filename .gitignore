@@ -1,1 +1,8 @@
 Dataset/
+2d_images/
+saved model/
+file.npy
+reconstruction_10batch_10epochs.h5
+Berea_2d25um_binary.raw
+BanderaBrown_2d25um_binary.raw
+reconstructed.raw
