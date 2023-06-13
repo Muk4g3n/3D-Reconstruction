@@ -5,6 +5,8 @@ import tensorflow as tf
 
 import os
 import cv2
+from scipy.ndimage import rotate
+
 
 # read Data from raw File
 
