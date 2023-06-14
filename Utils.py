@@ -1,10 +1,12 @@
 import numpy as np
 # import pandas as pd
-import matplotlib.pyplot as plt 
+# import matplotlib.pyplot as plt 
 import tensorflow as tf
 
 import os
 import cv2
+from scipy.ndimage import rotate
+
 
 # read Data from raw File
 
