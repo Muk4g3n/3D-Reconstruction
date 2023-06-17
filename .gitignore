@@ -7,3 +7,5 @@ Berea_2d25um_binary.raw
 BanderaBrown_2d25um_binary.raw
 reconstructed.raw
 *.pyc
+*.npy
+__pycache__/
