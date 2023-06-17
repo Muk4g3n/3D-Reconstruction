@@ -1,10 +1,10 @@
 import numpy as np
 # import pandas as pd
 # import matplotlib.pyplot as plt 
-import tensorflow as tf
+# import tensorflow as tf
 
 import os
-import cv2
+# import cv2
 from scipy.ndimage import rotate
 
 
@@ -91,34 +91,34 @@ def remove_padding(data, pad_size = 3):
 
 # Generate Features
 
-def getFeatures(m,X):
-    x1 = m.conv_1(X)
-    x1d = m.batchNorm_1(x1)
-    x1 = m.maxPool_1(x1d)
+# def getFeatures(m,X):
+#     x1 = m.conv_1(X)
+#     x1d = m.batchNorm_1(x1)
+#     x1 = m.maxPool_1(x1d)
 
 
-    x2 = m.conv_2(x1)
-    x2d = m.batchNorm_2(x2)
-    x2 = m.maxPool_2(x2d)
+#     x2 = m.conv_2(x1)
+#     x2d = m.batchNorm_2(x2)
+#     x2 = m.maxPool_2(x2d)
 
 
-    x3 = m.conv_3(x2)
-    x3d = m.batchNorm_3(x3)
-    x3 = m.maxPool_3(x3d)
+#     x3 = m.conv_3(x2)
+#     x3d = m.batchNorm_3(x3)
+#     x3 = m.maxPool_3(x3d)
 
 
 
-    x4 = m.conv_4(x3)
-    x4d = m.batchNorm_4(x4)
-    x4 = m.maxPool_4(x4d)
+#     x4 = m.conv_4(x3)
+#     x4d = m.batchNorm_4(x4)
+#     x4 = m.maxPool_4(x4d)
 
 
-    x5 = m.conv_5(x4)
-    x5d = m.batchNorm_5(x5)
-    x5 = m.maxPool_5(x5d)
+#     x5 = m.conv_5(x4)
+#     x5d = m.batchNorm_5(x5)
+#     x5 = m.maxPool_5(x5d)
 
 
-    flat = layers.Flatten()(x5)
-    latentDim = m.latentDense(flat)
-    encodedFeatures = m.batchNorm_6(latentDim)
-    return encodedFeatures.numpy()
+#     flat = layers.Flatten()(x5)
+#     latentDim = m.latentDense(flat)
+#     encodedFeatures = m.batchNorm_6(latentDim)
+#     return encodedFeatures.numpy()
