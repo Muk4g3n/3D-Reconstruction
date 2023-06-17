@@ -9,3 +9,4 @@ reconstructed.raw
 *.pyc
 *.npy
 __pycache__/
+.ipynb_checkpoints/
