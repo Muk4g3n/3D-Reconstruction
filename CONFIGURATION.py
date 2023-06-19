@@ -1,0 +1,10 @@
+CONFIGURATION = {
+    "BATCH_SIZE": 16,
+    "LEARNING_RATE": 1e-3,
+    "OPTIMIZER": 'Adam',
+    "N_EPOCHS": 2,
+    "N_FILTERS": 5,
+    "INPUT_SHAPE": (256, 256, 1),
+    "LATENT_SPACE_DIM": 64,
+    "REDUCED_DIMENSION": 256,
+}
