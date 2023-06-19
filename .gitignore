@@ -6,7 +6,7 @@ reconstruction_10batch_10epochs.h5
 Berea_2d25um_binary.raw
 BanderaBrown_2d25um_binary.raw
 reconstructed.raw
-*.pyc
+**/__pycache__/ 
 *.npy
-__pycache__/
-.ipynb_checkpoints/
+
+**/.ipynb_checkpoints/
