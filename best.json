@@ -75,6 +75,40 @@
     },
     {
         "title": "Epoch Training",
+        "started": 1687211326.3493052,
+        "params": {
+            "inputShape": [
+                256,
+                256,
+                1
+            ],
+            "latent_space_dim": 128,
+            "reducedDimension": 512,
+            "num_conv_layers": 7,
+            "learning_rate": 0.007056032892761748,
+            "batch_size": 16,
+            "epochs": 40,
+            "opt": "RMSprop",
+            "loss": 0.010351409570848846
+        },
+        "ended": 1687211742.2372563,
+        "samples": [
+            {
+                "title": "Voxel Training 1",
+                "started": 1687211326.349432,
+                "params": {},
+                "ended": 1687211539.959475
+            },
+            {
+                "title": "Voxel Training 2",
+                "started": 1687211539.9597087,
+                "params": {},
+                "ended": 1687211742.2357957
+            }
+        ]
+    },
+    {
+        "title": "Epoch Training",
         "started": 1687196743.4915192,
         "params": {
             "inputShape": [
@@ -138,6 +172,142 @@
                 "started": 1687202377.3892894,
                 "params": {},
                 "ended": 1687202564.6653135
+            }
+        ]
+    },
+    {
+        "title": "Epoch Training",
+        "started": 1687211988.6540778,
+        "params": {
+            "inputShape": [
+                256,
+                256,
+                1
+            ],
+            "latent_space_dim": 256,
+            "reducedDimension": 512,
+            "num_conv_layers": 7,
+            "learning_rate": 0.0046808168915064684,
+            "batch_size": 16,
+            "epochs": 40,
+            "opt": "RMSprop",
+            "loss": 0.010577946366465476
+        },
+        "ended": 1687212408.8168762,
+        "samples": [
+            {
+                "title": "Voxel Training 1",
+                "started": 1687211988.65461,
+                "params": {},
+                "ended": 1687212215.156872
+            },
+            {
+                "title": "Voxel Training 2",
+                "started": 1687212215.157061,
+                "params": {},
+                "ended": 1687212408.8167408
+            }
+        ]
+    },
+    {
+        "title": "Epoch Training",
+        "started": 1687213593.1364036,
+        "params": {
+            "inputShape": [
+                256,
+                256,
+                1
+            ],
+            "latent_space_dim": 64,
+            "reducedDimension": 128,
+            "num_conv_layers": 7,
+            "learning_rate": 0.004291462069243742,
+            "batch_size": 8,
+            "epochs": 30,
+            "opt": "Adam",
+            "loss": 0.012023235218651802
+        },
+        "ended": 1687214066.4021153,
+        "samples": [
+            {
+                "title": "Voxel Training 1",
+                "started": 1687213593.1365454,
+                "params": {},
+                "ended": 1687213855.6532242
+            },
+            {
+                "title": "Voxel Training 2",
+                "started": 1687213855.653413,
+                "params": {},
+                "ended": 1687214066.4019673
+            }
+        ]
+    },
+    {
+        "title": "Epoch Training",
+        "started": 1687212641.4470434,
+        "params": {
+            "inputShape": [
+                256,
+                256,
+                1
+            ],
+            "latent_space_dim": 256,
+            "reducedDimension": 256,
+            "num_conv_layers": 8,
+            "learning_rate": 0.007757719153516061,
+            "batch_size": 16,
+            "epochs": 30,
+            "opt": "RMSprop",
+            "loss": 0.013064472161861787
+        },
+        "ended": 1687213046.0057526,
+        "samples": [
+            {
+                "title": "Voxel Training 1",
+                "started": 1687212641.4471638,
+                "params": {},
+                "ended": 1687212854.559877
+            },
+            {
+                "title": "Voxel Training 2",
+                "started": 1687212854.5600004,
+                "params": {},
+                "ended": 1687213046.0056176
+            }
+        ]
+    },
+    {
+        "title": "Epoch Training",
+        "started": 1687210034.8634493,
+        "params": {
+            "inputShape": [
+                256,
+                256,
+                1
+            ],
+            "latent_space_dim": 64,
+            "reducedDimension": 128,
+            "num_conv_layers": 8,
+            "learning_rate": 0.0012699819863385329,
+            "batch_size": 8,
+            "epochs": 30,
+            "opt": "Adam",
+            "loss": 0.01343773884407009
+        },
+        "ended": 1687210721.0356452,
+        "samples": [
+            {
+                "title": "Voxel Training 1",
+                "started": 1687210034.863773,
+                "params": {},
+                "ended": 1687210406.466543
+            },
+            {
+                "title": "Voxel Training 2",
+                "started": 1687210406.4668467,
+                "params": {},
+                "ended": 1687210721.0354059
             }
         ]
     }

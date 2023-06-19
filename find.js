@@ -1,4 +1,6 @@
-const data =require("./output-failed 2.json")[0]
+const data =require("./output.json")[0]
+const best =require("./best.json")
 const sorted = data.sort((a,b)=>a.params.loss-b.params.loss)
-console.log(sorted.filter((e,i)=>i<5));
-console.log(JSON.stringify(sorted.filter((e,i)=>i<5)))
+const best_best=[...sorted.filter((e,i)=>i<5),...best]
+const sorted_best = best_best.sort((a,b)=>a.params.loss-b.params.loss)
+console.log(JSON.stringify(sorted_best))
