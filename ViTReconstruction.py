@@ -105,12 +105,8 @@ class ViT(Model):
     self.patch_encoder = PatchEncoder(N_PATCHES, HIDDEN_SIZE)
     self.trans_encoders = [TransformerEncoder(N_HEADS, HIDDEN_SIZE) for _ in range(N_LAYERS)]
     self.dense_1 = Dense(N_DENSE_UNITS*2, 'gelu',kernel_initializer='glorot_uniform')
-    self.mu = Dense(N_DENSE_UNITS, activation = 'sigmoid',kernel_initializer='glorot_uniform')
-    self.sigma = Dense(N_DENSE_UNITS, activation = 'sigmoid',kernel_initializer='glorot_uniform')
-  def sample_z(self,args):
-      z_mu, z_sigma = args
-      eps = K.random_normal(shape=(K.shape(z_mu)[0], K.int_shape(z_mu)[1]))
-      return z_mu + K.exp(z_sigma / 2) * eps
+    self.dense_2 = Dense(N_DENSE_UNITS, activation = 'sigmoid',kernel_initializer='glorot_uniform')
+
   def call(self, inputs, training = True):
 
     x = self.patch_encoder(inputs)
@@ -119,9 +115,7 @@ class ViT(Model):
       x = self.trans_encoders[i](x)
     x = Flatten()(x)
     x = self.dense_1(x)
-    mu = self.mu(x)
-    sigma = self.sigma(x)
-    z = Lambda(self.sample_z, output_shape=(64, ), name='z')([mu, sigma])
+    z = self.dense_2(x)
     return z
 
 
