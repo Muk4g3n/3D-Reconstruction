@@ -1,0 +1,144 @@
+[
+    {
+        "title": "Epoch Training",
+        "started": 1687201515.8965657,
+        "params": {
+            "inputShape": [
+                256,
+                256,
+                1
+            ],
+            "latent_space_dim": 64,
+            "reducedDimension": 512,
+            "num_conv_layers": 7,
+            "learning_rate": 0.007536762790792937,
+            "batch_size": 16,
+            "epochs": 40,
+            "opt": "Adam",
+            "loss": 0.009411087783285412
+        },
+        "ended": 1687201769.628423
+    },
+    {
+        "title": "Epoch Training",
+        "started": 1687196051.11192,
+        "params": {
+            "inputShape": [
+                256,
+                256,
+                1
+            ],
+            "latent_space_dim": 64,
+            "reducedDimension": 512,
+            "num_conv_layers": 7,
+            "learning_rate": 0.004769994103020501,
+            "batch_size": 16,
+            "epochs": 40,
+            "opt": "RMSprop",
+            "loss": 0.01001345542031359
+        },
+        "ended": 1687196355.5249662
+    },
+    {
+        "title": "Epoch Training",
+        "started": 1687200570.8940969,
+        "params": {
+            "inputShape": [
+                256,
+                256,
+                1
+            ],
+            "latent_space_dim": 64,
+            "reducedDimension": 512,
+            "num_conv_layers": 8,
+            "learning_rate": 0.007212423926917987,
+            "batch_size": 16,
+            "epochs": 40,
+            "opt": "RMSprop",
+            "loss": 0.010203010746722958
+        },
+        "ended": 1687200943.7615101,
+        "samples": [
+            {
+                "title": "Voxel Training 1",
+                "started": 1687200570.8941994,
+                "params": {},
+                "ended": 1687200763.6220598
+            },
+            {
+                "title": "Voxel Training 2",
+                "started": 1687200763.6221356,
+                "params": {},
+                "ended": 1687200943.761439
+            }
+        ]
+    },
+    {
+        "title": "Epoch Training",
+        "started": 1687196743.4915192,
+        "params": {
+            "inputShape": [
+                256,
+                256,
+                1
+            ],
+            "latent_space_dim": 128,
+            "reducedDimension": 512,
+            "num_conv_layers": 8,
+            "learning_rate": 0.009622636104953133,
+            "batch_size": 16,
+            "epochs": 40,
+            "opt": "RMSprop",
+            "loss": 0.010461297200386783
+        },
+        "ended": 1687197123.8491929,
+        "samples": [
+            {
+                "title": "Voxel Training 1",
+                "started": 1687196743.4916458,
+                "params": {},
+                "ended": 1687196936.8891885
+            },
+            {
+                "title": "Voxel Training 2",
+                "started": 1687196936.8892612,
+                "params": {},
+                "ended": 1687197123.8491144
+            }
+        ]
+    },
+    {
+        "title": "Epoch Training",
+        "started": 1687202179.8183887,
+        "params": {
+            "inputShape": [
+                256,
+                256,
+                1
+            ],
+            "latent_space_dim": 128,
+            "reducedDimension": 512,
+            "num_conv_layers": 8,
+            "learning_rate": 0.007338240502027898,
+            "batch_size": 16,
+            "epochs": 40,
+            "opt": "RMSprop",
+            "loss": 0.010478760934917324
+        },
+        "ended": 1687202564.6653776,
+        "samples": [
+            {
+                "title": "Voxel Training 1",
+                "started": 1687202179.8184993,
+                "params": {},
+                "ended": 1687202377.3892152
+            },
+            {
+                "title": "Voxel Training 2",
+                "started": 1687202377.3892894,
+                "params": {},
+                "ended": 1687202564.6653135
+            }
+        ]
+    }
+]
