@@ -8,5 +8,6 @@ BanderaBrown_2d25um_binary.raw
 reconstructed.raw
 **/__pycache__/ 
 *.npy
+results/
 
 **/.ipynb_checkpoints/
