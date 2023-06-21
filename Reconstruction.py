@@ -7,7 +7,7 @@ from tensorflow.keras.optimizers import *
 import os
 import pickle
 
-from CONFIGURATION import CONFIGURATION
+from CONFIGURATION import CONFIGURATION_M_3D_PMRNN as CONFIGURATION
 
 
 def calculate_kl_loss(model):

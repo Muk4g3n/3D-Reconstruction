@@ -6,25 +6,12 @@ from CBAM import ConvolutionBlockAttentionModule
 from tensorflow import reduce_mean, abs
 from tensorflow.keras.optimizers import *
 from tensorflow.keras import backend as K
+from CONFIGURATION import CONFIGURATION_ViT as CONFIGURATION
 
 import os
 import pickle
 
-CONFIGURATION = {
-    "BATCH_SIZE": 8,
-    "LEARNING_RATE": 1e-3,
-    "OPTIMIZER":'Adam',
-    "PATCH_SIZE":16,
-    "N_EPOCHS": 2,
-    "N_FILTERS": 5,
-    "INPUT_SHAPE":(256,256,1),
-    "LATENT_SPACE_DIM" : 64,
-    "REDUCED_DIMENSION" : 256,
-    "N_HEADS" : 3,
-    "HIDDEN_SIZE" : 256,
-    "N_PATCHES" : 256,
-    "N_LAYERS" : 1,
-}
+
 
 
 def calculate_kl_loss(model):
