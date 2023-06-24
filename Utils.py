@@ -4,6 +4,7 @@ import numpy as np
 # import tensorflow as tf
 
 import os
+from skimage.metrics import mean_squared_error
 # import cv2
 # from scipy.ndimage import rotate
 
@@ -93,35 +94,43 @@ def remove_padding(data, pad_size=3):
         unpadded_imgs.append(data[i][pad_size:-pad_size, pad_size:-pad_size])
     return np.array(unpadded_imgs)
 
-# Generate Features
-
-# def getFeatures(m,X):
-#     x1 = m.conv_1(X)
-#     x1d = m.batchNorm_1(x1)
-#     x1 = m.maxPool_1(x1d)
 
 
-#     x2 = m.conv_2(x1)
-#     x2d = m.batchNorm_2(x2)
-#     x2 = m.maxPool_2(x2d)
-
-
-#     x3 = m.conv_3(x2)
-#     x3d = m.batchNorm_3(x3)
-#     x3 = m.maxPool_3(x3d)
-
-
+<<<<<<< Updated upstream
 #     x4 = m.conv_4(x3)
 #     x4d = m.batchNorm_4(x4)
 #     x4 = m.maxPool_4(x4d)
+=======
 
 
-#     x5 = m.conv_5(x4)
-#     x5d = m.batchNorm_5(x5)
-#     x5 = m.maxPool_5(x5d)
+def porosity(im):
+    threshold = 0.5  # Adjust the threshold as needed
+
+    # Calculate the porosity using NumPy operations
+    porosity = 1 - np.mean(im <= threshold)
+    return porosity
+>>>>>>> Stashed changes
 
 
+def calculate_mae(list1, list2):
+    if len(list1) != len(list2):
+        raise ValueError("Both lists must have the same length.")
+    
+    n = len(list1)
+    # mae = sum(abs(y1 - y2) for y1, y2 in zip(list1, list2)) / n
+    mae = [abs(list1[i] - list2[i]) for i in range(n) ]
+    return mae
+
+def calculate_mse(list1, list2):
+    if len(list1) != len(list2):
+        raise ValueError("Both lists must have the same length.")
+
+<<<<<<< Updated upstream
 #     flat = layers.Flatten()(x5)
 #     latentDim = m.latentDense(flat)
 #     encodedFeatures = m.batchNorm_6(latentDim)
 #     return encodedFeatures.numpy()
+=======
+    mse = [mean_squared_error(img1, img2) for img1, img2 in zip(list1, list2)]
+    return mse
+>>>>>>> Stashed changes
