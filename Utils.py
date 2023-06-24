@@ -1,11 +1,4 @@
 import numpy as np
-# import pandas as pd
-# import matplotlib.pyplot as plt 
-# import tensorflow as tf
-
-import os
-# import cv2
-# from scipy.ndimage import rotate
 
 
 # read Data from raw File
@@ -34,7 +27,6 @@ def extract_subvolumes(cube, subvol_size=250):
 
 
 ## split images into blocks
-
 def splitImg(img,numOfBlocks = 4):
 
     # Get the size of the image
@@ -54,8 +46,8 @@ def splitImg(img,numOfBlocks = 4):
             blocks.append(block)
     return blocks
 
-## create an array from the blocks
 
+## create an array from the blocks
 def get_split_images(data):
     images = []
     
@@ -76,13 +68,10 @@ def add_padding(Range,data, pad_size = 3):
     final = []
     for i in range(Range):
         img = np.pad(data[i], ((pad_size, pad_size), (pad_size, pad_size), (0, 0)), mode='constant')
-#         print(img.shape)
         final.append(img)
-
     return np.array(final)
 
 ## remove padding from the image
-
 def remove_padding(data, pad_size = 3):
     unpadded_imgs = []
     for i in range(data.shape[0]):
